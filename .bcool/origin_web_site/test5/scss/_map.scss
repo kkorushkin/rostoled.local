@@ -1,0 +1,116 @@
+.map {
+  height: 60vh;
+  position: relative;
+  @media (min-width: 1024px) {
+    height: 440px;
+  }
+  &_ttl {
+    background: $blue;
+    color: #fff;
+    font-weight: 700;
+    font-size: $px24;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__form {
+    max-width: 355px;
+    width: 320px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background: #fff;
+    @media (max-width: 1025px) {
+      top: 20px;
+    }
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+    button.close {
+      margin-right: 10px;
+      margin-top: 5px;
+      color: #fff;
+      opacity: inherit;
+    }
+    &_ttl {
+      background: $orange;
+      text-align: center;
+      color: #fff;
+      font-size: $px14;
+      font-weight: 900;
+      text-transform: uppercase;
+      height: 55px;
+      padding-top: 15px;
+    }
+    &_body {
+      width: 90%;
+      margin: 20px auto;
+      .form-control {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #000;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+      }
+      #buyInputNumber {
+        width: 35px;
+        height: 25px;
+        border: 1px solid $grey-text;
+        float: left;
+        border-radius: 5px;
+      }
+      #lblBuyInputNumber {
+        float: left;
+        color: $grey-text;
+        font-size: $px18;
+        font-weight: 400;
+        margin-left: 14px;
+      }
+      textarea.form-control {
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        border: 1px solid #000;
+      }
+
+      .red-text {
+        color:  #f40000;
+        text-align: center;
+        font-size: $px14;
+        padding-bottom: 20px;
+      }
+
+      button {
+        margin: 0 auto;
+        border: none;
+        border-radius: 0;
+        background-color: $orange;
+        width: 132px;
+        height: 33px;
+        position: relative;
+        display: block;
+        color: #fff;
+        &:hover {
+          background-color: $red;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &__btn-quest {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    top: inherit;
+    left: 0;
+    right: inherit;
+    @media screen and (max-width: 540px) {
+      display: block;
+    }
+  }
+}
+#map {
+  height: 100%;
+}

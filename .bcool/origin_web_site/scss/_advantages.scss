@@ -1,0 +1,122 @@
+.advantages {
+  background-image: url("../img/advantages-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+  @media (max-width: 992px) {
+    background-image: none;
+    background-color: $blue;
+  }
+
+  .container {
+    max-width: 1170px;
+  }
+  .ttl {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  &__left {
+    text-align: right;
+    margin-right: -40px;
+    margin-left: 20px;
+    @media (max-width: 992px) {
+      margin: 0;
+    }
+    @media (max-width: 435px) {
+      margin-left: 10px;
+    }
+    img {
+      margin-right: 10px;
+      @media (max-width: 992px) {
+        margin-left: 10px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__central {
+    @media (max-width: 1199px) {
+      padding-top: 3%;
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    text-align: left;
+    margin-left: 10px;
+    img {
+      margin-left: 10px;
+    }
+  }
+
+  &__item {
+    &_ttl {
+      font-weight: 900;
+      font-size: $px24;
+      text-decoration: underline;
+      text-transform: uppercase;
+      span {
+        @media (max-width: 992px) {
+          text-decoration: underline;
+          float: left;
+          clear: both;
+        }
+        @media (max-width: 375px) {
+          font-size: $px20;
+        }
+      }
+    }
+    &_desc {
+      font-size: $px18;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+
+  &__light {
+    margin-top: 20px;
+  }
+
+  &__econ {
+    margin-top: 80px;
+  }
+
+  &__secur {
+    margin-top: -40px;
+    padding-left: 20px;
+    @media (max-width: 992px) {
+      padding-left: 0;
+    }
+  }
+
+  &__benefit {
+    margin-top: 50px;
+    margin-left: -20px;
+  }
+
+  &__stress {
+    margin-top: 40px;
+  }
+  @media (max-width: 992px) {
+    &__light,
+    &__econ,
+    &__secur,
+    &__benefit,
+    &__stress {
+      max-width: 320px;
+      width: 90%;
+      text-align: left;
+      margin: 0 auto;
+      margin-top: 20px;
+      clear: both;
+    }
+  }
+}

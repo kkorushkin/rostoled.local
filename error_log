@@ -1,0 +1,11 @@
+[29-Sep-2017 11:17:29 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:30 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:31 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:32 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:36 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:36 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:56 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:57 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:58 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[29-Sep-2017 11:17:58 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in /home/ogsnfknl/public_html/catalog/view/theme/default/template/common/header.tpl on line 180
+[01-Oct-2017 10:20:04 Europe/Moscow] PHP Warning:  unlink(/home/ogsnfknl/public_html/system/storage/cache/cache.currency.1506841979): No such file or directory in /home/ogsnfknl/public_html/system/library/cache/file.php on line 17

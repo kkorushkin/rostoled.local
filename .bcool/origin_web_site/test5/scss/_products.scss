@@ -1,0 +1,194 @@
+.products {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: $blue;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__tabs {
+    border: none;
+    max-width: 1228px;
+    margin: 0 auto;
+    @media (max-width: 1256px) {
+      max-width: 1158px;
+    }
+    @media (max-width: 1186px) {
+      max-width: 1004px;
+    }
+    @media (max-width: 1050px) {
+      width: 900px;
+    }
+    @media (max-width: 991px) {
+      position: absolute;
+      top: 450px;
+      left: -370px;
+      -ms-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+      z-index: 99;
+    }
+    @media (max-width: 375px) {
+      left: -390px;
+    }
+    li {
+      border: 1px solid $orange;
+      box-sizing: border-box;
+      padding: 0 8.28px;
+      @media (max-width: 1050px) {
+        padding: 0;
+      }
+      @media (max-width: 991px) {
+        float: right;
+      }
+      &:hover {
+        background: #ff5717!important;
+      }
+
+      &.active {
+        background: $orange;
+        a{
+          color: #fff!important;
+          border: 1px solid $orange!important;
+          background: #ff5717!important;
+        }
+      }
+      a {
+        color: $orange;
+        font-size: $px20;
+        @media (max-width: 1256px) {
+          padding: 5px 10px;
+        }
+        @media (max-width: 1186px) {
+          font-size: $px18;
+          padding: 2px 5px;
+
+        }
+        &:hover {
+          color: #fff!important;
+          border: 1px solid $orange!important;
+          background: #ff5717!important;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    max-width: 1288px;
+    margin: 0 auto;
+
+    @media (max-width: 991px) {
+      height: 885px;
+      max-width: 70%;
+    }
+    @media (max-width: 600px) {
+      max-width: 58%;
+    }
+    @media (max-width: 450px) {
+      float: right;
+      max-width: 70%;
+    }
+    @media (max-width: 375px) {
+      max-width: 260px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    margin-top: 20px;
+    @media (max-width: 375px) {
+      padding-right: 3px;
+    }
+    &_cntnr {
+      width: 260px;
+      height: 420px;
+      border: 1px solid $blue;
+      padding: 20px;
+      margin: 0 auto;
+      @media (max-width: 1320px) {
+        width: 240px;
+      }
+      @media (max-width: 520px) {
+        padding: 10px;
+        width: 220px;
+        height: 410px;
+      }
+    }
+    &_ttl {
+      font-weight: 900;
+      font-size: $px18;
+      text-align: left;
+      color: $blue;
+      height: 88px;
+    }
+    &_img {
+      margin: 10px auto;
+      img {
+        height: 195px;
+        width: auto;
+        max-width: 200px;
+      }
+    }
+    &_cost {
+      font-size: $px18;
+      margin-bottom: 20px;
+      color: $blue;
+      font-weight: 900;
+    }
+    &_red-span {
+      color: $orange;
+      font-size: $px12;
+      text-decoration: line-through;
+    }
+    &_btn-buy,
+    &_btn-dtl {
+      width: 98px;
+      height: 37px;
+      font-size: $px12;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    &_btn-buy {
+      border: none;
+      border-radius: 0;
+      background: $orange;
+      color: #fff;
+      float: left;
+      &:hover {
+        color: #fff;
+        background: $red;
+      }
+      &:focus {
+        background: $orange;
+        color: #fff;
+      }
+    }
+    &_btn-dtl {
+      border-radius: 0;
+      border: 1px solid $blue;
+      background: transparent;
+      color: $blue;
+      float: right;
+      &:hover {
+        color: #fff;
+        background: $blue;
+      }
+      &:focus {
+        border: 1px solid $blue;
+        background: transparent;
+        color: $blue;
+      }
+    }
+    &_cost-buy {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

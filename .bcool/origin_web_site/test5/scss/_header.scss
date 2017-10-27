@@ -1,0 +1,198 @@
+header {
+  background-color: #fff;
+  .container {
+  }
+  .navbar-default {
+    min-height: 80px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    @media (max-width: 1291px) {
+      margin-bottom: 20px;
+    }
+    .navbar-collapse {
+      border: none;
+    }
+    .navbar-toggle {
+      float: left;
+      top: 20px;
+      border: 1px solid $orange;
+      border-radius: 0;
+      height: 34px;
+      @media (max-width: 375px) {
+        top: 50px;
+        left: 0;
+      }
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: $orange;
+        display: none;
+        &:first-child {
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          transition: all 0.5s;
+          display: block;
+        }
+        &:last-child {
+          -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+          transition: all 0.5s;
+          display: block;
+          margin-top: -2px;
+        }
+      }
+      &.collapsed {
+        .icon-bar{
+          display: block;
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+          transition: all 0.5s;
+          &:last-child {
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+    .navbar-brand {
+      @media (max-width: 1237px) {
+        padding: 30px 10px 0 0;
+      }
+      @media (max-width: 991px) {
+        float: none;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-width: 263px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @media (max-width: 610px) {
+        left: inherit;
+        right: 0;
+        padding: 0;
+        top: 5px;
+      }
+      img {
+        @media (max-width: 1237px) {
+          width: 185px;
+        }
+        @media (max-width: 1120px) {
+          width: 150px;
+        }
+        @media (max-width: 1080px) {
+          width: 130px;
+        }
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        @media (max-width: 375px) {
+          width: 220px;
+        }
+      }
+    }
+    .navbar-nav {
+      margin-top: 40px;
+      @media (max-width: 375px) {
+        margin-top: 60px;
+      }
+      li {
+        a {
+          font-weight: 500;
+          font-size: $px14;
+          padding-bottom: 0;
+          padding-top: 0;
+          text-transform: uppercase;
+          @media (max-width: 1237px) {
+            padding: 5px 10px;
+          }
+          @media (max-width: 991px) {
+            padding: 10px 15px;
+          }
+          &:hover,
+          &:focus {
+            background-color: transparent !important;
+            color: #767676 !important;
+          }
+        }
+        &.active {
+          a{
+            background-color: transparent!important;
+            color: #767676!important;
+          }
+        }
+        ul {
+          li {
+            a {
+              &:hover {
+                border-bottom: 1px solid #ff5717;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.quest-top {
+  background-color:  $orange;
+  border: none;
+  color: #fff;
+  width: 154px;
+  height: 39px;
+  margin-top: 30px;
+  float: right;
+  &:hover {
+    background-color: $red;
+  }
+  @media (max-width: 991px) {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    margin-top: 0;
+  }
+  @media (max-width: 610px) {
+    top: 55px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+  .navbar-header {
+    float:none;
+  }
+  .navbar-nav {
+    float: none;
+    margin: inherit;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu>li>a {
+    padding: 5px 15px 5px 25px;
+  }
+}

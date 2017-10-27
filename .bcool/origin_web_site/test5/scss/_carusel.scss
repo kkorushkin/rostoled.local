@@ -1,0 +1,176 @@
+#carousel-example-generic {
+  background-image: url("../img/carousel/bg/Backgrounds_Blue_background_on_your_desktop_082106_.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-top: 80px;
+  .container.carousel_tel {
+    max-width: 1170px;
+  }
+  .carousel_tel {
+    text-align: right;
+    padding-top: 30px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    a {
+      color: #fff;
+      font-weight: 700;
+      font-size: $px20;
+      text-decoration: none;
+    }
+  }
+  .carusel-cntnr {
+    position: relative;
+
+    .carousel-inner {
+      height: 70vh;
+
+      .item {
+        position: relative;
+        height: 100%;
+        .carousel-img {
+          height: 100%;
+          width: 100%;
+          &.first-slide {
+            background-image: url("../img/carousel/bg/carusel-bg.jpg");
+            background-size: cover;
+            background-position: bottom right;
+          }
+          &.second-slide,
+          &.third-slide,
+          &.forth-slide,
+          &.fivth-slide,
+          &.sixth-slide,
+          &.seventh-slide {
+            background-size: 80% 80%;
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            max-width: 540px;
+            margin: 0 auto;
+            margin-right: 20%;
+            @media (max-width: 425px) {
+              background-size: auto 100%;
+            }
+          }
+          &.second-slide {
+            background-image: url("../img/carousel/bg/lampT8.png");
+          }
+          &.third-slide {
+            background-image: url("../img/carousel/bg/line.png");
+          }
+          &.forth-slide {
+            background-image: url("../img/carousel/bg/progectors.png");
+          }
+          &.fivth-slide {
+            background-image: url("../img/carousel/bg/modules.png");
+          }
+          &.sixth-slide {
+            background-image: url("../img/carousel/bg/panels.png");
+          }
+          &.seventh-slide {
+            background-image: url("../img/carousel/bg/home-lamp.png");
+          }
+        }
+
+        .carousel-caption {
+          position: absolute;
+          top: 10%;
+          left: -10%;
+          right: 0;
+          bottom: inherit;
+          margin: auto;
+          height: 340px;
+          max-width: 540px;
+          text-align: left;
+          @media (max-width: 652px) {
+            left: 0;
+          }
+          @media (max-width: 620px) {
+            padding-left: 45px;
+          }
+          h3 {
+            font-size: $px72;
+            text-align: left;
+            @media (max-width: 1440px) {
+              font-size: $px50;
+            }
+            @media (max-width: 768px) {
+              font-size: $px40;
+            }
+            @media (max-width: 620px) {
+              text-align: center;
+            }
+            @media (max-width: 425px) {
+              font-size: $px30;
+            }
+          }
+
+          &__red {
+            text-align: right;
+            margin-bottom: 25px;
+            margin-top: 15px;
+            @media (max-width: 620px) {
+              text-align: center;
+            }
+            &_span {
+              background-color:  $orange;
+              font-size: $px22;
+              padding: 5px 10px;
+              text-transform: uppercase;
+              @media (max-width: 425px) {
+                font-size: $px18;
+              }
+            }
+          }
+
+          &__desc {
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-shadow: 1px;
+            @media (max-width: 620px) {
+              text-align: center;
+            }
+          }
+          &__btn {
+            border-radius: 0px;
+            background-color:  $blue;
+            width: 206px;
+            height: 44px;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: $px22;
+            border: none;
+            margin-top: 25px;
+            padding-top: 9px;
+            @media (max-width: 620px) {
+              display: block;
+              margin: 9px auto 0;
+            }
+            &:hover {
+              background-color: $orange;
+            }
+          }
+        }
+      }
+    }
+    .carousel-control {
+      opacity: 1;
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+      background: transparent;
+      color: $orange;
+      span {
+        @media (max-width: 625px) {
+          top: initial;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+}

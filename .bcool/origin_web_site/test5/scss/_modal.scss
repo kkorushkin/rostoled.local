@@ -1,0 +1,264 @@
+.modal-dialog {
+  max-width: 354px;
+
+  .modal-content {
+    border: none;
+    border-radius: 0;
+
+    button.close {
+      margin-right: 10px;
+      margin-top: 5px;
+      color: #fff;
+      opacity: inherit;
+    }
+
+    .modal-header {
+      border: none;
+      background-color:  #f40000;
+      text-align: center;
+
+      .modal-title {
+        color: #fff;
+        font-size: $px14;
+      }
+    }
+
+    .modal-body {
+      color: $grey-text;
+      font-weight: 300;
+      font-size: $px18;
+
+      .form-control {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #000;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+      }
+      textarea.form-control {
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        border: 1px solid #000;
+      }
+
+      .red-text {
+        color:  #f40000;
+        text-align: center;
+        font-size: $px14;
+        padding-bottom: 20px;
+      }
+
+      button {
+        margin: 0 auto;
+        border: none;
+        border-radius: 0;
+        background-color:  $orange;
+        width: 132px;
+        height: 33px;
+        position: relative;
+        display: block;
+        color: #fff;
+        &:hover{
+          background-color: $red;
+        }
+      }
+    }
+  }
+}
+
+#buyModal {
+  .modal-dialog {
+    .modal-content {
+      .modal-body {
+        #buyInputNumber {
+          width: 35px;
+          height: 25px;
+          border: 1px solid $grey-text;
+          float: left;
+          border-radius: 5px;
+        }
+        #lblBuyInputNumber {
+          float: left;
+          color: $grey-text;
+          font-size: $px18;
+          font-weight: 400;
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+}
+
+.prodModal {
+  .modal-dialog {
+    max-width: 810px;
+    width: 90%;
+    .modal-body {
+      .gallery {
+        background: #fff;
+        border: 1px solid $blue;
+        box-sizing: border-box;
+        margin-left: 5px;
+        @media (max-width: 767px) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+        .gal-col {
+          padding-left: 0;
+          padding-right: 0;
+          .gal-prev {
+            border-right: 1px solid $blue;
+            border-bottom: 1px solid $blue;
+            box-sizing: border-box;
+            img {
+              width: 100%;
+            }
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+        .gal-demo {
+          padding-right: 0;
+          padding-left: 0;
+          position: relative;
+          img {
+            width: 100%;
+          }
+        }
+        .gal-one {
+          padding-right: 0;
+          padding-left: 0;
+          position: relative;
+          text-align: center;
+          img {
+            height: 310px;
+            width: auto;
+            max-width: 278px;
+          }
+        }
+      }
+      .products {
+        &__item {
+          &_desc {
+            margin-bottom: 50px;
+          }
+          &_cost {
+            width: 160px;
+            margin-bottom: 0;
+            padding-top: 5px;
+            @media (max-width: 335px) {
+              width: 140px;
+            }
+          }
+          &_cost-buy {
+            @media (max-width: 767px) {
+              bottom: -50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#thankModal {
+  .modal-dialog {
+    width: 90%;
+    max-width: 815px;
+    .modal-body {
+      width: 90%;
+      max-width: 640px;
+      margin: 0px auto 20px;
+      div {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.buy-link {
+  a {
+    margin: 0 auto;
+    border: 0;
+    border-radius: 0;
+    background-color: #ff5717;
+    width: 132px;
+    height: 33px;
+    position: relative;
+    display: block;
+    color: #fff;
+    &:hover {
+      background-color: #b80000;
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+input[type=number] {
+  padding: 0;
+  text-align: center;
+  outline: 0;
+  pointer-events: none;
+}
+
+span.spinner {
+  position: absolute;
+  height: 40px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  margin-left: 10px;
+}
+
+span.spinner > .sub,
+span.spinner > .add {
+  float: left;
+  display: block;
+  width: 15px;
+  margin-top: 2px;
+  text-align: center;
+  cursor: pointer;
+  transition: .1s linear;
+  -o-transition: .1s linear;
+  -ms-transition: .1s linear;
+  -moz-transition: .1s linear;
+  -webkit-transition: .1s linear;
+}
+
+span.spinner > .add {
+}
+
+span.spinner > .sub:hover,
+span.spinner > .add:hover {
+  color: $orange;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-size: $px18;
+  font-weight: 300px;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-size: $px18;
+  font-weight: 300px;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  font-size: $px18;
+  font-weight: 300px;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-size: $px18;
+  font-weight: 300px;
+}

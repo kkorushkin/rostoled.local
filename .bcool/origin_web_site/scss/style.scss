@@ -1,0 +1,79 @@
+@import "_varibles";
+html {
+  font-size: 14px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $grey-text;
+  padding-right: 0!important;
+}
+.container {
+  @media (max-width: 1319px) {
+    width: 100%!important;
+  }
+}
+@import "_header";
+@import "_carusel";
+@import "_action";
+@import "_category";
+@import "_advantages";
+@import "_how-buy";
+@import "_products";
+@import "_ship-pay";
+@import "_sertificate";
+@import "_our-as";
+@import "_map";
+@import "_footer";
+@import "_modal";
+
+.ttl {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $px24;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.lavalamp-object {
+  border-bottom: 1px solid #ff5717;
+}
+
+button,
+a {
+  &:focus {
+    outline: none!important;
+  }
+}
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  display:none;
+  background: transparent!important;
+  border: none!important;
+  border-radius: 0;
+  img {
+    @media (max-width: 1366px) {
+      width: 80%;
+    }
+    @media (max-width: 768px) {
+      width: 60%;
+    }
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+@import "_material";
+@import "_placeholder";
+@import "_scroll";

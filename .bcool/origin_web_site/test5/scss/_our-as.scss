@@ -1,0 +1,12 @@
+.our-as {
+  margin-bottom: 60px;
+  .ttl {
+    text-align: left;
+    color: $orange;
+  }
+  &__desc {
+    color: $blue;
+    font-size: $px24;
+    font-weight: 400;
+  }
+}

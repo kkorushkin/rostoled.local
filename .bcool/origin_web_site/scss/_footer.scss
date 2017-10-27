@@ -1,0 +1,27 @@
+.footer {
+  background: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+  &_logo {
+
+  }
+  &_tel {
+    text-align: center;
+    padding-top: 15px;
+    a {
+      color: #fff;
+      font-weight: 700;
+      font-size: $px20;
+      text-decoration: none;
+    }
+  }
+  &_copy {
+    color: $orange;
+    font-size: $px20;
+    font-weight: 700;
+    padding-top: 15px;
+  }
+}
